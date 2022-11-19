@@ -7,9 +7,8 @@ const el = document.querySelectorAll(`.key`)
 el.forEach(element => {
     element.addEventListener('click', () => {
         const a = element.getAttribute('data-key')
-        const value = document.querySelector(`audio[data-key="${a}"]`)
-        playaudio(value)
-
+        const value = document.querySelector(`audio[data-key="${a}"]`);
+        playaudio(value);
     })
 });
 
